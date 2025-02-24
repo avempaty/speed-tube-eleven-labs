@@ -119,6 +119,9 @@ dependencies:
   react-player:
     specifier: ^2.16.0
     version: 2.16.0(react@18.2.0)
+  readable-web-to-node-stream:
+    specifier: ^5.0.0
+    version: 5.0.0
   rxjs:
     specifier: ^7.8.1
     version: 7.8.1
@@ -7531,6 +7534,13 @@ packages:
       events: 3.3.0
       process: 0.11.10
       string_decoder: 1.3.0
+    dev: false
+
+  /readable-web-to-node-stream@5.0.0:
+    resolution: {integrity: sha512-BYDNE3p8516xCm5yCkwXt4lTLSjYAFzPtMot7dwpNz3tb5nwcLUfq9N1yiaAYFOA+9BVKi13aOIUPdv96t/Xzg==}
+    engines: {node: '>=18'}
+    dependencies:
+      readable-stream: 4.7.0
     dev: false
 
   /readdirp@3.6.0:

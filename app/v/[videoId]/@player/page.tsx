@@ -2,6 +2,7 @@
 import React, { useContext } from "react"
 import VideoPlayer from "./VideoPlayer"
 import SpeechPlayer from "./SpeechPlayer"
+import SpeechPlayerElevenLabs from "./SpeechPlayerElevenLabs"
 import { SummaryPlayerContext } from "../../../SummaryPlayerContext"
 
 const PlayerPage: React.FC<{ params: { videoId: string } }> = ({
@@ -17,7 +18,7 @@ const PlayerPage: React.FC<{ params: { videoId: string } }> = ({
           playNextSegment()
         }}
       />
-      <SpeechPlayer
+      <SpeechPlayerElevenLabs
         onComplete={() => {
           playNextSegment()
         }}

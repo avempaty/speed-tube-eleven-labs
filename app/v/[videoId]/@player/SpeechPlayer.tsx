@@ -46,7 +46,7 @@ const SpeechPlayer: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
     let utterance: SpeechSynthesisUtterance | undefined
     if (utteranceId === previousUtteranceId) {
       console.log(
-        "resume",
+        "SP: resume",
         utteranceId?.split(":")[0],
         utteranceText,
         window.speechSynthesis,
